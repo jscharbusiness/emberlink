@@ -1,0 +1,111 @@
+#plans {
+
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	padding-bottom: 10px;
+
+	h1 {
+		grid-column: 1 / span 5;
+	}
+
+	#displayInfo {
+		grid-column: span 3;
+		display: grid;
+		grid-template-columns: auto auto auto;
+		background-color: #fff;
+
+		.name {
+			grid-column: 1 / span 3;
+			@extend .displayFlex;
+			font-size: 2em;
+		}
+
+		.description {
+			display: block;
+			grid-area: 2 / span 3;
+		}
+
+		.cost {
+			@extend .displayFlex;
+			font-size: 1.5em;
+			font-weight: bold;
+			grid-area: 3;
+		}
+
+		.download {
+			grid-column: 2;
+			@extend .displayFlex;
+			font-size: 1.5em;
+			font-weight: bold;
+		}
+
+		.upload {
+			grid-column: 3;
+			@extend .displayFlex;
+			font-size: 1.5em;
+			font-weight: bold;
+		}
+
+		.speed{
+			display: none;
+		}
+
+		.select {
+			grid-column: 1 / span 3;
+			@extend .displayFlex;
+
+			a {
+				background-color: $ember;
+				font-size: 1.5em;
+				color: #fff;
+				width: 50%;
+				height: auto;
+				padding: 10px;
+				border-radius: 6px;
+				@extend .displayFlex;
+			}
+		}
+	}
+	
+	#options {
+		grid-column: span 2;
+
+		/* Use pointer-events: none; at some point for click through divs*/
+
+		.plan {
+			margin: 0px 10px 30px 10px;
+			padding: 20px;
+			background-color: $planOptions;
+			color: $planOptionsText;
+			transition: 0.25s;
+			/*box-shadow: 1px 1px 15px darkgray;*/
+
+			&:hover {
+				background-color: darken($planOptions, 7);
+			}
+
+			.name, .download, .upload, .description, .select {
+				display: none;
+			}
+
+			.cost {
+				font-size: 2em;
+				text-align: center;
+				padding: 10px;
+			}
+
+			.speed{
+				font-size: 0.9em;
+				text-align: center;
+				padding:  10px;
+
+				.number {
+					font-size: 1.3em;
+				}
+			}
+		}
+		.active {
+			border: 2px solid black;
+		}
+	}
+}

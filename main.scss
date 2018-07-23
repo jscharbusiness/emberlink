@@ -1,0 +1,143 @@
+$ember: #FE603D;
+$planOptions: #ECECEC;
+$planOptionsText: #6B6A6A;
+$mainFontColor: #6B6A6A;
+
+.displayFlex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: $mainFontColor;
+}
+
+main {
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.section {
+	margin: 80px 0px;
+
+	h1 {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+}
+
+
+@import "css/nav"; 
+@import "css/plans"; 
+@import "css/coverage"; 
+@import "css/about"; 
+@import "css/contact"; 
+@import "css/footer";
+
+
+
+
+
+
+
+
+
+
+
+
+// $buttonBackground: #16A805;
+// $buttonColor: #FFF;
+// $buttonPadding: 5px;
+
+// .button {
+// 	background: $buttonBackground;
+// 	border-radius: 8px;
+// 	color: $buttonColor;
+// 	display: inline-block;
+// 	padding: $buttonPadding;
+// 	text-decoration: none;
+// }
+
+// .jumbo-button {
+// 	@extend .button;
+// 	padding: $buttonPadding + 30px;
+// }
+
+// .light-button {
+// 	@extend .button;
+// 	background: darken($buttonBackground, 8);
+// }
+
+
+
+// .panel {
+// 	border: 3px solid blue;
+// 	background: lightgreen;
+// 	margin: 10px;
+// }
+
+// @mixin border-radius($radius){
+// 	-webkit-border-radius: $radius;
+// 	-moz-border-radius: $radius;
+// 	-ms-border-radius: $radius;
+// 	-webkit-border-radius: $radius;
+// }
+
+// .little-panel{
+// 	@extend .panel;
+// 	@include border-radius(5px);
+// 	font-size: 12px;
+// 	padding: 5px;
+// }
+
+// .big-panel{
+// 	@extend .panel;
+// 	@include border-radius(20px);
+// 	font-size: 32px;
+// 	padding: 20px;
+// }
+
+
+// @import "profile";
+
+// p {
+// 	font-size: 24px;
+// }
+
+
+
+
+// $primaryColor: #2c3e50;
+// $hoverColor: #16a085;
+// $textColor: #fff;
+
+// nav {
+
+// 	ul {
+// 		background-color: $primaryColor;
+// 		margin: 0;
+// 		padding: 0;
+// 		list-style: none;
+// 	}
+
+// 	li {
+// 		display: inline-block;
+// 	}
+
+// 	a {
+// 		color: $textColor;
+// 		display: inline-block;
+// 		padding: 10px 16px;
+// 		text-decoration: none;
+
+// 		&:hover {
+// 			background-color: $hoverColor;
+// 		}
+// 	}
+
+// }
