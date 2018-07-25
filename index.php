@@ -6,9 +6,9 @@ $SITE_URL = "http://localhost:8080/emberlink/";
 // Plans
 
 $plans = array(
-	array("Small", "5", "3", "$20", "Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam ducimus perferendis id minus quaerat quidem vitae."),
+	array("Small", "5", "3", "$20", "Description Lorem dolor sit amet, consectetur adipisicing elit. Ullam ducimus perferendis quaerat quidem."),
 	array("Medium", "10", "5", "$40", "Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam ducimus perferendis id minus quaerat quidem vitae."),
-	array("Large", "20", "10", "$60", "Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam ducimus perferendis id minus quaerat quidem vitae.")
+	array("Large", "20", "10", "$60", "Descriptionipsum dolor sit amet, consectetur adipisicing elit. Ducimus perferendis id quaerat quidem vitae.")
 );
 
 
@@ -121,10 +121,10 @@ if ($_GET['action'] == "email") {
 
 				echo '
 					<div class="name">'.$name.'</div>
-					<div class="description">'.$description.'</div>
 					<div class="cost">'.$cost.'</div>
 					<div class="download"><span class="number">'.$download.'</span>mbps&darr;</div>
 					<div class="upload"><span class="number">'.$upload.'</span>mbps&uarr;</div>
+					<div class="description">'.$description.'</div>
 					<div class="select"><a data-id="'.$id.'">I want this!</a></div>';
 
 
@@ -152,11 +152,11 @@ if ($_GET['action'] == "email") {
 						echo '<div class="plan '.$active.'">
 
 							<div class="name">'.$name.'</div>
-							<div class="description">'.$description.'</div>
 							<div class="cost">'.$cost.'</div>
 							<div class="speed"><span class="number">'.$download.'</span>mbps&darr;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="number">'.$upload.'</span>mbps&uarr;</div>
 							<div class="download"><span class="number">'.$download.'</span>mbps&darr;</div>
 							<div class="upload"><span class="number">'.$upload.'</span>mbps&uarr;</div>
+							<div class="description">'.$description.'</div>
 							<div class="select"><a data-id="'.$id.'">I want this!</a></div>
 
 						</div>';

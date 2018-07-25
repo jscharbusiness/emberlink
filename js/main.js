@@ -29,7 +29,20 @@ $(window).on('load', function(){
 
 		$(this).addClass('active');
 
-		$('#displayInfo').html($(this).html());
+		var name = $(this).find('.name').html();
+		var cost = $(this).find('.cost').html();
+		var download = $(this).find('.download').html();
+		var upload = $(this).find('.upload').html();
+		var description = $(this).find('.description').html();
+		var select = $(this).find('.select').html();
+
+		$('#displayInfo ').find('.name').html(name);
+		$('#displayInfo ').find('.cost').html(cost);
+		$('#displayInfo ').find('.download').html(download);
+		$('#displayInfo ').find('.upload').html(upload);
+		$('#displayInfo ').find('.description').html(description);
+		$('#displayInfo ').find('.select').html(select);
+		
 	});
 
 	$("#submit").click(function(){
