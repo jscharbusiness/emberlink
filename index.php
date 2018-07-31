@@ -85,6 +85,8 @@ if (isset($_GET['action']) && $_GET['action'] == "email") {
 	<meta charset="UTF-8">
 	<title>Emberlink</title>
 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/main.css">
@@ -108,8 +110,8 @@ if (isset($_GET['action']) && $_GET['action'] == "email") {
 		<!-- Pricing -->
 		
 		<div class="section" id="plans">
-			<h1>Plans</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias repellendus, dicta non reiciendis mollitia unde, maiores.</p>
+			<!-- <h1>Plans</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias repellendus, dicta non reiciendis mollitia unde, maiores.</p> -->
 			<div id="displayInfo"><?php 
 
 				$plan = $plans[0];
@@ -118,6 +120,7 @@ if (isset($_GET['action']) && $_GET['action'] == "email") {
 				$upload = $plan[2];
 				$cost = $plan[3];
 				$description = $plan[4];
+				$all = "";
 				$id = "0";
 
 				echo '
@@ -126,6 +129,7 @@ if (isset($_GET['action']) && $_GET['action'] == "email") {
 					<div class="download"><span class="number">'.$download.'</span>mbps&darr;</div>
 					<div class="upload"><span class="number">'.$upload.'</span>mbps&uarr;</div>
 					<div class="description">'.$description.'</div>
+					<div class="all">'.$all.'</div>
 					<div class="select"><a data-id="'.$id.'">I want this!</a></div>';
 
 
@@ -173,7 +177,7 @@ if (isset($_GET['action']) && $_GET['action'] == "email") {
 		
 		<div class="section" id="coverage">
 			<h1>Coverage Map</h1>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d80942.99666160284!2d-81.81111175381218!3d40.99159395270625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1532357942099" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d296679.8192036673!2d-81.81171676696545!3d40.98597555996042!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1533075201479" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 			<button>Check</button>
 			<button>New Site</button>
 		</div>

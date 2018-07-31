@@ -16,8 +16,10 @@
 		grid-column: span 3;
 		display: grid;
 		grid-template-columns: 8% 28% 28% 28% 8%;
-		grid-template-rows: 80px 120px 120px 100px;
+		/*grid-template-rows: 80px 120px 120px 100px;*/
 		justify-content: space-between;
+		background-color: #fff;
+		border-radius: 6px;
 
 		.name {
 			grid-column: 1 / span 5;
@@ -60,6 +62,13 @@
 			display: none;
 		}
 
+		.all {
+			@extend .displayFlex;
+			text-align: center;
+			grid-column: 2 / span 3;
+			font-size: 1.3em;
+		}
+
 		.select {
 			grid-column: 1 / span 5;
 			@extend .displayFlex;
@@ -89,7 +98,7 @@
 		/* Use pointer-events: none; at some point for click through divs*/
 
 		.plan {
-			margin: 0px 8% 30px 8%;
+			margin: 0px 8%;
 			padding: 20px;
 			background-color: $planOptions;
 			color: $planOptionsText;
@@ -98,7 +107,11 @@
 			border-radius: 6px;
 
 			&:hover {
-				background-color: darken($planOptions, 7);
+				background-color: #eee;
+			}
+
+			&:nth-of-type(2) {
+				margin: 20px 8%;
 			}
 
 			.name, .download, .upload, .description, .select {
@@ -122,7 +135,11 @@
 			}
 		}
 		.active {
-			
+			background-color: $ember;
+			color: #fff;
+			&:hover {
+				background-color: $ember;
+			}
 		}
 	}
 }
