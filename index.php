@@ -6,9 +6,9 @@ $SITE_URL = "http://localhost:8080/emberlink/";
 // Plans
 
 $plans = array(
-	array("Small", "5", "3", "$20", "Description Lorem dolor sit amet, consectetur adipisicing elit. Ullam ducimus perferendis quaerat quidem."),
-	array("Medium", "10", "5", "$40", "Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam ducimus perferendis id minus quaerat quidem vitae."),
-	array("Large", "20", "10", "$60", "Descriptionipsum dolor sit amet, consectetur adipisicing elit. Ducimus perferendis id quaerat quidem vitae.")
+	array("Basic", "3", "1", "$30", "For those who need reliable access to the internet, for browsing, social media, and light video."),
+	array("Standard", "10", "3", "$40", "Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam ducimus perferendis id minus quaerat quidem vitae."),
+	array("Professional", "20", "5", "$60", "Descriptionipsum dolor sit amet, consectetur adipisicing elit. Ducimus perferendis id quaerat quidem vitae.")
 );
 
 
@@ -27,7 +27,7 @@ function test($data) { // Prevent attacks
 
 }
 
-if ($_GET['action'] == "email") {
+if (isset($_GET['action']) && $_GET['action'] == "email") {
 
 	if (!$_POST['name']) {
 
@@ -109,6 +109,7 @@ if ($_GET['action'] == "email") {
 		
 		<div class="section" id="plans">
 			<h1>Plans</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias repellendus, dicta non reiciendis mollitia unde, maiores.</p>
 			<div id="displayInfo"><?php 
 
 				$plan = $plans[0];

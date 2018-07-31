@@ -1,7 +1,14 @@
 $ember: #FE603D;
+$background: #fff;
+$mainFontColor: #6B6A6A;
+
+$navbar: #393A3E;
+$navbarLinks: #AC9D9D;
+
+$planSelected: #ECECEC;
 $planOptions: #ECECEC;
 $planOptionsText: #6B6A6A;
-$mainFontColor: #6B6A6A;
+
 
 .displayFlex {
 	display: flex;
@@ -14,6 +21,7 @@ html, body {
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
 	color: $mainFontColor;
+	background-color: $background;
 }
 
 main {

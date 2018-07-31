@@ -1,0 +1,64 @@
+#form {
+    width: 80%;
+    margin: auto;
+
+    label {
+	    width: 80%;
+	    margin: 10px auto;
+	    display: block;
+	    font-size: 1.1em;
+	}
+
+	.formInput, .formTextarea {
+	    display: block;
+	    width: 80%;
+	    margin: auto;
+	    line-height: 1.5;
+	    color: #7b8a8b;
+	    background-color: #fff;
+	    background-clip: padding-box;
+	    border: none;
+	    border-radius: 6px;
+	    padding: 10px;
+	    font-size: 1.2em;
+	}
+
+	input[type=text] {
+	    font-family: 'Raleway',sans-serif;
+	    margin-bottom: 30px;
+	}
+
+	input[type=email] {
+	    font-family: 'Raleway',sans-serif;
+	    margin-bottom: 30px;
+	}
+
+	.formSubmit {
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	}
+
+	.submit {
+	    display: inline-block;
+	    font-weight: 400;
+	    text-align: center;
+	    border: none;
+	    border-radius: 6px;
+	    cursor: pointer;
+	    width: 20%;
+	    height: 20px;
+	    margin: 20px auto;
+	    padding: 20px;
+	    line-height: 20px;
+	    text-align: center;
+	    font-size: 1.3em;
+	    background-color: $ember;
+	    color: #fff;
+	    transition: 0.25s;
+
+	    &:hover {
+			background-color: darken($ember, 7);
+		}
+	}
+}

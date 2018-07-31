@@ -8,12 +8,15 @@
 		grid-column: 1 / span 5;
 	}
 
+	p {
+		grid-column: 2 / span 3;
+	}
+
 	#displayInfo {
 		grid-column: span 3;
 		display: grid;
 		grid-template-columns: 8% 28% 28% 28% 8%;
 		grid-template-rows: 80px 120px 120px 100px;
-		background-color: #fff;
 		justify-content: space-between;
 
 		.name {
